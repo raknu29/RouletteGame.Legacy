@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteGame.Legacy", "RouletteGame.Legacy.csproj", "{8DB02F2D-DF86-4A3B-B94D-0374C1ECB9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteGame.Legacy.Test.Unit", "..\RouletteGame.Legacy.Test.Unit\RouletteGame.Legacy.Test.Unit.csproj", "{73149080-76FA-4F68-B380-2905D8066E6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteGame.Legacy.Test.Unit", "RouletteGame.Legacy.Test.Unit\RouletteGame.Legacy.Test.Unit.csproj", "{46B1B754-8089-4121-B72D-26B83C77FE8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8DB02F2D-DF86-4A3B-B94D-0374C1ECB9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DB02F2D-DF86-4A3B-B94D-0374C1ECB9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DB02F2D-DF86-4A3B-B94D-0374C1ECB9ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73149080-76FA-4F68-B380-2905D8066E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73149080-76FA-4F68-B380-2905D8066E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73149080-76FA-4F68-B380-2905D8066E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73149080-76FA-4F68-B380-2905D8066E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B1B754-8089-4121-B72D-26B83C77FE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B1B754-8089-4121-B72D-26B83C77FE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B1B754-8089-4121-B72D-26B83C77FE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B1B754-8089-4121-B72D-26B83C77FE8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
