@@ -56,6 +56,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="FakeFieldFactory.cs" />
     <Compile Include="FakeRoulette.cs" />
+    <Compile Include="BetUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouletteUnitTest.cs" />
   </ItemGroup>
