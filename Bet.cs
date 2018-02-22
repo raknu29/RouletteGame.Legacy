@@ -1,6 +1,6 @@
 ﻿namespace RouletteGame.Legacy
 {
-    public abstract class Bet
+    public abstract class Bet : IBet
     {
         protected Bet(string name, uint amount)
         {
@@ -18,7 +18,7 @@
         }
     }
 
-    public class FieldBet : Bet
+    public class FieldBet : Bet, IFieldBet
     {
         private readonly uint _fieldNumber;
 
@@ -39,7 +39,7 @@
         }
     }
 
-    public class ColorBet : Bet
+    public class ColorBet : Bet, IColorbet
     {
         private readonly uint _color;
 
@@ -75,7 +75,7 @@
         }
     }
 
-    public class EvenOddBet : Bet
+    public class EvenOddBet : Bet, IEvenOddBet
     {
         private readonly bool _even;
 
