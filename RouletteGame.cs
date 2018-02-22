@@ -5,8 +5,8 @@ namespace RouletteGame.Legacy
 {
     public class RouletteGame
     {
-        private readonly List<Bet> _bets;
-        private readonly Roulette _roulette;
+        private readonly List<IBet> _bets;
+        private readonly IRoulette _roulette;
         private bool _roundIsOpen;
 
         public RouletteGame(IRoulette roulette)
