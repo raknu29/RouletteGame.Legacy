@@ -27,7 +27,7 @@ namespace RouletteGame.Legacy
             _roundIsOpen = false;
         }
 
-        public void PlaceBet(Bet bet)
+        public void PlaceBet(IBet bet)
         {
             if (_roundIsOpen) _bets.Add(bet);
             else throw new RouletteGameException("Bet placed while round closed");
@@ -50,6 +50,16 @@ namespace RouletteGame.Legacy
                 if (won > 0)
                     Console.WriteLine("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet);
             }
+        }
+
+        public bool RoundIsOpen
+        {
+            get { return _roundIsOpen; }
+        }
+
+        public List<IBet> Bets
+        {
+            get { return _bets; }
         }
     }
 
