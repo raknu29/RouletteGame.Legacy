@@ -10,24 +10,26 @@ using NSubstitute;
 namespace RouletteGame.Legacy.Test.Unit
 {
     [TestFixture]
-    public class BetUnitTest
+    public class FieldBetUnitTest
     {
-        private IFieldBet _fieldBet;
-        private IColorbet _colorBet;
-        private IEvenOddBet _evenOddBetBet;
+        private IFieldBet _uut;
+
         [SetUp]
         public void Setup()
         {
-            _fieldBet = Substitute.For<IFieldBet>();
-            _colorBet = Substitute.For<IColorbet>();
-            _evenOddBetBet = Substitute.For<IEvenOddBet>();
+            _uut = new FieldBet("TestPlayer", 10, 2);
         }
 
-        //[Test]
-        //public void tes1()
-        //{
+        [Test]
+        public void WonAmount_winningField_WonAmountCorrect()
+        {
+            Assert.That(_uut.WonAmount(new Field(2, Field.Black)), Is.EqualTo(360));
+        }
 
-        //    _fieldBet.WonAmount().Returns
-        //}
+        [Test]
+        public void WonAmount_losingField_WonAmountCorrect()
+        {
+            Assert.That(_uut.WonAmount(new Field(4, Field.Black)), Is.EqualTo(0));
+        }
     }
 }
